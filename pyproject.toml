@@ -29,6 +29,8 @@ dependencies = [
 dev = [
     # REQ.DEV.DEPS: External packages used for linting, testing, type checking, etc.
     "pre-commit",
+    "pytest",
+    "pytest-cov",
     "ruff",
     "validate-pyproject",
 ]
