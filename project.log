@@ -45,3 +45,20 @@
 2026-03-23 19:56:13 | INFO | CI | ========================
 2026-03-23 19:56:13 | INFO | CI | Notebook executed successfully!
 2026-03-23 19:56:13 | INFO | CI | ========================
+2026-03-24 18:53:39 | INFO | CI | === RUN START ===
+2026-03-24 18:53:39 | INFO | CI | project=MODULE 3: CORPUS EXPLORATION
+2026-03-24 18:53:39 | INFO | CI | repo_dir=nlp-03-text-exploration
+2026-03-24 18:53:39 | INFO | CI | python=3.14.3
+2026-03-24 18:53:39 | INFO | CI | os=Windows 11
+2026-03-24 18:53:39 | INFO | CI | shell=powershell
+2026-03-24 18:53:39 | INFO | CI | cwd=.
+2026-03-24 18:53:39 | INFO | CI | github_actions=False
+2026-03-24 18:53:39 | INFO | CI | START script.....
+2026-03-24 18:53:39 | INFO | CI | ROOT_PATH = .
+2026-03-24 18:53:39 | INFO | CI | NOTEBOOKS_PATH = notebooks
+2026-03-24 18:53:39 | INFO | CI | SCRIPTS_PATH = scripts
+2026-03-24 18:53:39 | INFO | CI | Logger configured.
+2026-03-24 18:53:43 | INFO | CI | ========================
+2026-03-24 18:53:43 | INFO | CI | Pipeline executed successfully!
+2026-03-24 18:53:43 | INFO | CI | ========================
+2026-03-24 18:53:43 | INFO | CI | END main()

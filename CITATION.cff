@@ -19,9 +19,12 @@ authors:
     given-names: Denise M.
     orcid: "https://orcid.org/0000-0001-6165-7389"
     affiliation: "Northwest Missouri State University, USA"
+  - family-names: Crews
+    given-names: Angie
+    affiliation: "Northwest Missouri State University, USA"
 
-repository-code: "https://github.com/denisecase/nlp-03-text-exploration"
-url: "https://github.com/denisecase/nlp-03-text-exploration"
+repository-code: "https://github.com/Angie-Crews/nlp-03-text-exploration"
+url: "https://github.com/Angie-Crews/nlp-03-text-exploration"
 license: MIT
 
 abstract: |
