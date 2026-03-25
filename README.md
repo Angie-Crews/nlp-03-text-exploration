@@ -36,6 +36,41 @@ You will:
 This project illustrates how **structure appears in text before any machine learning is applied**.
 These patterns support later pipelines, embeddings, and retrieval.
 
+## Workflow Completion Summary
+
+This repository documents progress through the guided workflow phases for this assignment.
+
+### Phase 1. Start and Run
+
+- Project opened in VS Code and dependencies synchronized with `uv`.
+- Script executed with `uv run python -m nlp.nlp_corpus_explore_case`.
+- Notebook executed in `notebooks/nlp_corpus_explore_case.ipynb`.
+
+### Phase 2. Change Authorship
+
+- Repository ownership, commit history, and push workflow were applied through GitHub.
+- Project files were updated in the student workspace to reflect personal authorship.
+
+### Phase 3. Read and Understand
+
+- Reviewed tokenization and cleaning workflow.
+- Interpreted global and category-level token frequency tables.
+- Examined co-occurrence windows and bigram frequency output.
+- Connected observed patterns to later NLP tasks.
+
+### Next Phases (Planned)
+
+- Phase 4. Technical Modification
+- Phase 5. Apply Skills to a New Problem
+
+### Analyst Skills Demonstrated
+
+- Converting raw text into structured tokens for analysis.
+- Building interpretable frequency summaries with Polars.
+- Using context-window co-occurrence to identify word relationships.
+- Using bigrams to capture local phrase structure.
+- Turning outputs into concise, evidence-based observations.
+
 You'll work with just these files as you update authorship and experiment:
 
 - **notebooks/nlp_corpus_explore_case.ipynb** - notebook version
