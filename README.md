@@ -43,8 +43,8 @@ This repository documents progress through the guided workflow phases for this a
 ### Phase 1. Start and Run
 
 - Project opened in VS Code and dependencies synchronized with `uv`.
-- Script executed with `uv run python -m nlp.nlp_corpus_explore_case`.
-- Notebook executed in `notebooks/nlp_corpus_explore_case.ipynb`.
+- Script executed with `uv run python -m nlp.nlp_corpus_explore_crews_p4`.
+- Notebook executed in `notebooks/nlp_corpus_explore_crews_p4.ipynb`.
 
 ### Phase 2. Change Authorship
 
@@ -58,9 +58,17 @@ This repository documents progress through the guided workflow phases for this a
 - Examined co-occurrence windows and bigram frequency output.
 - Connected observed patterns to later NLP tasks.
 
-### Next Phases (Planned)
+### Phase 4. Technical Modification
 
-- Phase 4. Technical Modification
+- Removed common stopwords before computing token frequencies, co-occurrence, and bigrams.
+- Updated the script to save comparison charts to `docs/images/nlp_corpus_explore_crews_p4_top_tokens.png` and `docs/images/nlp_corpus_explore_crews_p4_top_bigrams.png`.
+- Updated the notebook to display both charts inline while also saving copies to `docs/images`.
+- Added a color-coded bigram chart with a legend so repeated word pairs can be traced back to their source category more easily.
+- Replaced the generic notebook intro with a short Section 0 guide tailored to the current Phase 4 workflow.
+- Observed that category-specific terms such as `yard`, `garage`, and `truck` became more visible after filtering.
+
+### Next Phase (Planned)
+
 - Phase 5. Apply Skills to a New Problem
 
 ### Analyst Skills Demonstrated
@@ -73,8 +81,8 @@ This repository documents progress through the guided workflow phases for this a
 
 You'll work with just these files as you update authorship and experiment:
 
-- **notebooks/nlp_corpus_explore_case.ipynb** - notebook version
-- **src/nlp/nlp_corpus_explore_case.py** - Python script
+- **notebooks/nlp_corpus_explore_crews_p4.ipynb** - notebook version
+- **src/nlp/nlp_corpus_explore_crews_p4.py** - Python script
 - **pyproject.toml** - project configuration and dependencies
 - **zensical.toml** - project metadata
 
@@ -155,12 +163,13 @@ uvx pre-commit run --all-files
 # uv run python -m spacy download en_core_web_sm
 
 # First, run the module
-# IMPORTANT: Close each figure after viewing so execution continues
-uv run python -m nlp.nlp_corpus_explore_case
+# This Phase 4 version saves both the token chart and bigram chart to docs/images
+uv run python -m nlp.nlp_corpus_explore_crews_p4
 
 # Then, open the notebook.
-# IMPORTANT: Select the kernel and Run All:
-# notebooks/nlp_corpus_explore_case.ipynb
+# IMPORTANT: Select the kernel and Run All.
+# The notebook displays both charts inline and also saves copies to docs/images:
+# notebooks/nlp_corpus_explore_crews_p4.ipynb
 
 uv run ruff format .
 uv run ruff check . --fix
