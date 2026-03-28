@@ -67,9 +67,19 @@ This repository documents progress through the guided workflow phases for this a
 - Replaced the generic notebook intro with a short Section 0 guide tailored to the current Phase 4 workflow.
 - Observed that category-specific terms such as `yard`, `garage`, and `truck` became more visible after filtering.
 
-### Next Phase (Planned)
+### Phase 5. Apply Skills to a New Problem
 
-- Phase 5. Apply Skills to a New Problem
+**Research question:** Do animals and vehicles use distinct vocabulary after stopword removal?
+
+- Created `notebooks/nlp_corpus_explore_crews_p5.ipynb` by extending the Phase 4 notebook.
+- Reused the same corpus, stopword list, and `tokenize` function from Phase 4 without modification.
+- Added a `GROUP_MAP` to merge the four categories into two high-level groups: `animals` (dog + cat) and `vehicles` (car + truck).
+- Replaced the co-occurrence section with a unique-token comparison using set difference to identify vocabulary exclusive to each group.
+- Updated both charts (tokens and bigrams) to compare groups side by side in a 1×2 panel layout.
+- Saved group comparison charts to `docs/images/nlp_corpus_explore_crews_p5_top_tokens.png` and `docs/images/nlp_corpus_explore_crews_p5_top_bigrams.png`.
+- Observed that animals-unique tokens include creature-specific words (`barks`, `purrs`, `whiskers`, `leash`, `kennel`) while vehicles-unique tokens include motion and load words (`highway`, `cargo`, `hauls`, `trailer`, `wheels`).
+- Noted that `yard` is a shared token, showing that spatial language is not group-specific.
+- Concluded that the vocabulary separation between groups is strong enough to support a simple classifier in a future phase.
 
 ### Analyst Skills Demonstrated
 
@@ -81,7 +91,8 @@ This repository documents progress through the guided workflow phases for this a
 
 You'll work with just these files as you update authorship and experiment:
 
-- **notebooks/nlp_corpus_explore_crews_p4.ipynb** - notebook version
+- **notebooks/nlp_corpus_explore_crews_p4.ipynb** - Phase 4 notebook (stopword removal + category charts)
+- **notebooks/nlp_corpus_explore_crews_p5.ipynb** - Phase 5 notebook (Animals vs Vehicles group comparison)
 - **src/nlp/nlp_corpus_explore_crews_p4.py** - Python script
 - **pyproject.toml** - project configuration and dependencies
 - **zensical.toml** - project metadata
