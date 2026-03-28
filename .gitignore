@@ -16,6 +16,7 @@
 # ALT: Comment if logs must be inspected or validated.
 # *.log
 # logs/
+project.log
 PRIVATE_NOTES.md
 PRIVATE-NOTES.md
 
